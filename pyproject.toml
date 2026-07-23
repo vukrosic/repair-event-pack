@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repair-event-pack"
+version = "0.1.0"
+description = "Build and verify offline community repair event records and Open Repair exports"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Vuk Rosic" }]
+
+[project.scripts]
+repair-event-pack = "repair_event_pack.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
